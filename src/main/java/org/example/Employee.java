@@ -1,4 +1,4 @@
-package com.example;
+package org.example;
 
 public class Employee {
 
@@ -12,6 +12,7 @@ public class Employee {
 	}
 
 	public String getId() {
+
 		return id;
 	}
 
@@ -20,7 +21,7 @@ public class Employee {
 	}
 
 	public double getSalary() {
-		return salary;
+		return this.salary;
 	}
 
 	public void setSalary(double salary) {
