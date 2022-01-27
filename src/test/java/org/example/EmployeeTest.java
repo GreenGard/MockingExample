@@ -8,7 +8,7 @@ class EmployeeTest {
     Employee employee = new Employee("1", 50000);
 
     @Test
-    void updateIdShouldChangeIdOnEmployee() {
+    void updateIdShouldReturnTwo() {
 
         employee.setId("2");
         var result = employee.getId();
@@ -37,14 +37,15 @@ class EmployeeTest {
     @Test
     void getIdForEmployee() {
 
-
         var result = employee.getId();
+
         assertThat(result.equals("1"));
 
     }
 
     @Test
     void testToStringMethod() {
+
         var result = employee.toString();
 
         assertThat(result).isEqualTo("Employee [id=1, salary=50000.0]");
@@ -53,8 +54,8 @@ class EmployeeTest {
     @Test
     void getSalaryForEmployee() {
 
-
         var result = employee.getSalary();
+
         assertThat(result).isEqualTo(50000);
 
     }
@@ -77,10 +78,4 @@ class EmployeeTest {
         assertThat(result).isTrue();
     }
 
-    @Test
-    void toStringMethodShouldReturnString() {
-        var result = employee.toString();
-
-        assertThat(result).isEqualTo("Employee [id=1, salary=50000.0]");
-    }
 }

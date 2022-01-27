@@ -1,20 +1,9 @@
 package org.example;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.mockito.ArgumentCaptor;
-import org.mockito.Mockito;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.assertj.core.internal.bytebuddy.matcher.ElementMatchers.is;
-import static org.assertj.core.internal.bytebuddy.matcher.ElementMatchers.returns;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 import static org.mockito.Mockito.*;
 
 class EmployeeManagerTest {
@@ -33,9 +22,7 @@ class EmployeeManagerTest {
 
         assertThat(employeeRepository.findAll().get(0).isPaid()).isFalse();
 
-
     }
-
 
     @Test
     void employeeIsPaid() {
