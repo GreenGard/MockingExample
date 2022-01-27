@@ -7,7 +7,6 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 class EmployeeTest {
     Employee employee = new Employee("1", 50000);
 
-
     @Test
     void updateIdShouldChangeIdOnEmployee() {
 
@@ -52,7 +51,7 @@ class EmployeeTest {
     }
 
     @Test
-    void getSaleryForEmployee() {
+    void getSalaryForEmployee() {
 
 
         var result = employee.getSalary();
@@ -65,7 +64,7 @@ class EmployeeTest {
 
         boolean result = employee.isPaid();
 
-        assertThat(result).isEqualTo(false);
+        assertThat(result).isFalse();
 
     }
 
@@ -78,5 +77,10 @@ class EmployeeTest {
         assertThat(result).isTrue();
     }
 
+    @Test
+    void toStringMethodShouldReturnString() {
+        var result = employee.toString();
 
+        assertThat(result).isEqualTo("Employee [id=1, salary=50000.0]");
+    }
 }

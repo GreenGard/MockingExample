@@ -44,4 +44,7 @@ class EmployeeManagerTest {
         Employee emp1 = new Employee(anyString(), 30000);
         assertThat(emp1.isPaid());
     }
+
+
+
 }
