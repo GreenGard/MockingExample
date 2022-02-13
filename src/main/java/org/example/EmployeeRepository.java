@@ -6,5 +6,5 @@ public interface EmployeeRepository {
 
 	List<Employee> findAll();
 
-	Employee save(Employee e);
+	boolean save(Employee e);
 }

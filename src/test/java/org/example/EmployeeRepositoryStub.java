@@ -14,7 +14,7 @@ public class EmployeeRepositoryStub implements EmployeeRepository {
     }
 
     @Override
-    public Employee save(Employee e) {
-        return null;
+    public boolean save(Employee e) {
+    return false;
     }
 }
